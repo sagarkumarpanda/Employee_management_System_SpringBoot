@@ -8,9 +8,9 @@ Pre-requisites to run demo
 
 Spring Tool Suite 4
 Spring Boot
-OJDBC Driver
+mysql Driver
 Tomcat Jasper
-Oracle Developer 10g
+mysql-connector-8.5
 
 
 
@@ -23,3 +23,4 @@ Import this Project into the Spring Tool Suite 4. This may take some time as the
 For the first run, change update to create. This is to ensure the database is created.
 Once the workspace is built, run the application.
 Navigate to http://localhost:8080/views/index.jsp
+
