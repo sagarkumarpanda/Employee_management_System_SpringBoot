@@ -18,10 +18,10 @@
       <a href="index.jsp" class="brand-logo" ><img src="logo.png" width=200 ></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       
-      <li><a href="AddEmployee.jsp">AddEmployee</a><br></li>
-      <li><a href="FindEmpById.jsp">FindEmpById</a><br></li>
-      <li><a href="FindEmpByName.jsp">FindEmpByName</a><br></li>
-      <li><a href="findallemp">AllEmployee</a><br></li>
+      <li><a href="AddEmployee.jsp">Add New Employee</a><br></li>
+      <li><a href="FindEmpById.jsp">Find Employee By Id</a><br></li>
+      <li><a href="FindEmpByName.jsp">Find Employee By Name</a><br></li>
+      <li><a href="findallemp">View All Employee</a><br></li>
       </ul>
     </div>
   </nav>

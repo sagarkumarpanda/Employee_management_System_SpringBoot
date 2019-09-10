@@ -1,7 +1,7 @@
 <jsp:include page="header.jsp"/>
 <style>
 #backgroundimage {
-background-image: url("bg.jpg");
+background-image: url("bg.png");
 width: 100vw;
 height: 100vh; 
 background-size: 100% 100%;
