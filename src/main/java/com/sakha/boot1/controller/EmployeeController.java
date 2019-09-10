@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -43,11 +44,18 @@ public class EmployeeController {
 		return "viewemp";
 	}
 	
-	@PostMapping("/findallemp")
+	@GetMapping("/findallemp")
 	public String getAllEmployee(Model m){
 		List<Employee> list=service.getAllEmployee();
 		m.addAttribute("list",list);
 		return "viewall";
 	}
+	
+	@GetMapping(value="/updater")    
+    public String update(@RequestParam("empId") int empId,Model m){    
+        Employee emp=service.getEmployee(empId); 
+        m.addAttribute("emp",emp);  
+        return "updateemp";    
+    }    
 
 }

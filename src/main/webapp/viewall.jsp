@@ -19,7 +19,7 @@
       <td>${emp.dob}</td>
       <td>${emp.salary}</td>
       <td><a href='DeleteEmployee?empId=${emp.empId}'>Delete</a></td>
-      <td><a href='updatemp ?empId=${emp.empId}'>Update</a></td>
+      <td><a href='updater?empId=${emp.empId}'>Update</a></td>
       </tr>
   </c:forEach>
 </table>

@@ -2,16 +2,14 @@
  <h3 class="center-align"> Update Employee</h3>
 	
   <div class="container" style="border:2px;padding:5%">
-    <form class="col s12" action="update" method="post">
+    <form class="col s12" action="UpdateEmployee" method="get">
      
      <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Enter your name" name="empId" type="text" class="validate" id="empName" value='${emp.empId}' hidden>
+          <input placeholder="Enter your name" name="empId" type="text" class="validate" id="empName" value="${emp.empId}" hidden>
          
         </div>
        </div>
-     
-     
       <div class="row">
         <div class="input-field col s12">
           <input placeholder="Enter your name" name="empName" type="text" class="validate" id="empName" value='${emp.empName}'>
@@ -35,6 +33,6 @@
         </div>
       </div>
       <input class="waves-effect waves-light btn" type="submit"></input>
- 
+ </form>
   </div>
 <jsp:include page="footer.jsp"/>

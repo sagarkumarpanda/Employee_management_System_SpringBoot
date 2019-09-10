@@ -21,10 +21,7 @@
       <li><a href="AddEmployee.jsp">AddEmployee</a><br></li>
       <li><a href="FindEmpById.jsp">FindEmpById</a><br></li>
       <li><a href="FindEmpByName.jsp">FindEmpByName</a><br></li>
-      <li><a href="AllEmployee.jsp">AllEmployee</a><br></li>
-      <li><a href="UpdateEmployee.jsp">UpdateEmployee</a><br></li>
-      <li><a href="DeleteEmployee.jsp">DeleteEmployee</a><br></li>
-        
+      <li><a href="findallemp">AllEmployee</a><br></li>
       </ul>
     </div>
   </nav>
