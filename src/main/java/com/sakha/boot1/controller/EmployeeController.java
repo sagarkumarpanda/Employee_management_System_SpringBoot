@@ -26,44 +26,28 @@ public class EmployeeController {
 		return "view";
 	}
 	
-	@GetMapping("/employeeByname")
+	@PostMapping("/employeeByname")
 	public String getEmployeeByName(@RequestParam("empName") String empName,Model m)
 	{
 	
 		Employee emp=service.getEmployeeByName(empName);
 		m.addAttribute("emp",emp);
-		return "view";
+		return "viewemp";
 	}
 	
-	@GetMapping("/employeeid")
+	@PostMapping("/employeeid")
 	public String getEmployee(@RequestParam("empId") int empId,Model m)
 	{
 		Employee emp=service.getEmployee(empId);
 		m.addAttribute("emp",emp);
-		return "view";
+		return "viewemp";
 	}
 	
 	@PostMapping("/findallemp")
 	public String getAllEmployee(Model m){
 		List<Employee> list=service.getAllEmployee();
-		m.addAttribute("emp",list);
+		m.addAttribute("list",list);
 		return "viewall";
-		
 	}
-	
-	@GetMapping("/delete")
-	public String deleteById(@RequestParam("empId") int empId,Model m)
-	{
-		service.deleteEmployee(empId);
-		m.addAttribute("emp","sucessfull...");
-		return "success";
-	
-	}
-	
-	@GetMapping("/update")
-	public String update(@ModelAttribute("emp") Employee emp,Model m){    
-        service.update(emp);    
-        m.addAttribute("emp","update sucessfully...");
-        return "success";    
-    }    
+
 }

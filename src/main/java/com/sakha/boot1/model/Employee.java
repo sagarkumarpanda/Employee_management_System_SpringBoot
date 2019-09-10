@@ -20,8 +20,17 @@ public class Employee {
 	 LocalDate dob;
 	float salary;
 	
-	public Employee( String empName, LocalDate dob, float salary) {
+	public int getEmpId() {
+		return empId;
+	}
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+
+	public Employee(int empId, String empName, LocalDate dob, float salary) {
 		super();
+		this.empId = empId;
 		this.empName = empName;
 		this.dob = dob;
 		this.salary = salary;
@@ -52,13 +61,6 @@ public class Employee {
 		return salary;
 	}
 
-	public Employee(int empId, String empName, LocalDate dob, float salary) {
-		super();
-		this.empId = empId;
-		this.empName = empName;
-		this.dob = dob;
-		this.salary = salary;
-	}
 
 	public void setSalary(float salary) {
 		this.salary = salary;

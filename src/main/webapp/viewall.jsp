@@ -12,14 +12,14 @@
               <th colspan="2">Delete/Update</th>
           </tr>
         </thead>
-  <c:forEach items="${list}" var="empl">
+  <c:forEach items="${list}" var="emp">
     <tr>
       <td>${emp.empId}</td>
       <td>${emp.empName}</td>
       <td>${emp.dob}</td>
       <td>${emp.salary}</td>
-      <td><a href='DeleteEmployee?empid=${emp.empId}'>Delete</a></td>
-      <td><a href='UpdateEmployee?empId=${emp.empId}'>Update</a></td>
+      <td><a href='DeleteEmployee?empId=${emp.empId}'>Delete</a></td>
+      <td><a href='updatemp ?empId=${emp.empId}'>Update</a></td>
       </tr>
   </c:forEach>
 </table>

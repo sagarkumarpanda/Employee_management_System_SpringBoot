@@ -1,21 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isELIgnored="false"%>
-    <jsp:include page="header.jsp"/>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-<h2 align="center">Find Employee By ID</h2>
-<div align="center"> 
-<form action="employeeid">
-<h2>Enter Employee Id<input type="text" name="empId"></h2>
-<input type="submit" size="120px" value="Search">
-</form>
-</div>
-
-</body>
-</html>
+<jsp:include page="header.jsp"/>
+ <h3 class="center-align"> Get Employee</h3>
+	
+  <div class="container" style="border:2px;padding:5%">
+    <form class="col s12" action="employeeid" method="post">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Enter Employee ID" name="empId" type="text" class="validate">
+          <label for="first_name">Employee ID</label>
+        </div>
+       </div>
+     
+      <input class="waves-effect waves-light btn" type="submit"></input>
+    </form>
+  </div>
 <jsp:include page="footer.jsp"/>

@@ -1,17 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isELIgnored="false"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-<h2>Find All Employee </h2>
-<form action="findallemp" method="post">
-<input type="submit" value="findall">
-</form>
-
-</body>
-</html>
+<jsp:include page="header.jsp"/>
+  <div class="container" style="border:2px;padding:5%">
+    <form class="col s12" action="findallemp" method="post">
+      <div class="row">
+        <div class="input-field col s12">
+        <h1 align="center">Find Employee</h1>
+          <br>
+          <br>
+        </div>
+       </div>
+     
+     <h1 align="center"><input class="waves-effect waves-light btn" type="submit" value="Find all Employee"></input></h1> 
+    </form>
+  </div>
+<jsp:include page="footer.jsp"/>
